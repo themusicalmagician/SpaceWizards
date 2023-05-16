@@ -25,6 +25,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void Die()
     {
-        Application.Quit();
+        gameObject.SetActive(false);
     }
 }

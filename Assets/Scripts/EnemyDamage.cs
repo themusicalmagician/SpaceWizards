@@ -6,9 +6,9 @@ public class EnemyDamage : MonoBehaviour
 {
     public int damage;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter(Collider other)
     {
-        PlayerHealth health = collision.gameObject.GetComponent<PlayerHealth>();
+        PlayerHealth health = other.gameObject.GetComponent<PlayerHealth>();
         if (health != null)
         {
             health.takeDamage(damage);
