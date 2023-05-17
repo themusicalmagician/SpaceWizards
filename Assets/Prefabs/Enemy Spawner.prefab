@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3901901761211005443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3901901761211005441}
+  - component: {fileID: 3901901761211005440}
+  m_Layer: 0
+  m_Name: Enemy Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3901901761211005441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3901901761211005443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 151.16257, y: 1.01, z: 90.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3901901761211005440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3901901761211005443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b304d09577cb3545a868e7d23ee4cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 5578645849856008617, guid: 1e21e7d1bf4646e4abe8e65bdd375b70, type: 3}
+  - {fileID: 719094848341708736, guid: 73bc6d162e610604382aa91dcd5393a7, type: 3}
+  - {fileID: 3511242366861878617, guid: 4e376196dd8ce09498ca26c7267bd012, type: 3}
+  - {fileID: 32182072690237297, guid: 3b400e0c18dbf1e4bb114f8c4b3ce2b5, type: 3}
+  - {fileID: 6698179442863433616, guid: 15f2ddc393219c643ab7abd7873104d5, type: 3}
+  - {fileID: 8231110228713488505, guid: a44da1a21ffd7ab4093d9a99b4009dd2, type: 3}
+  - {fileID: 6344469024932412392, guid: 927461ebd51e6944ca4e2dfbf468a8ed, type: 3}
+  - {fileID: 1233679399252395393, guid: fbc2010eda03de24aa5006fcee487e65, type: 3}
+  - {fileID: 1938625155625719680, guid: 117ec941d1f335c4c857b600929b90eb, type: 3}
+  spawnValues: {x: 1, y: 1, z: 1}
+  spawnMostWait: 2
+  spawnLeastWait: 0.5
+  startWait: 1
+  stop: 0

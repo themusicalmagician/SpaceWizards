@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
-    public float speed = 20f;
+    public float speed = 12f;
 
     public void Start()
     {
@@ -18,8 +18,8 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        Vector3 move = transform.right * x + transform.forward * z + new Vector3(0, -9.8f, 0);
 
-        controller.Move(move* speed * Time.deltaTime);
+        controller.Move(move * speed * Time.deltaTime);
     }
 }

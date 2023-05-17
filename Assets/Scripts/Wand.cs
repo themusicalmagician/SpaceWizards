@@ -7,7 +7,7 @@ public class Wand : MonoBehaviour
     //variables
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
-    public float bulletSpeed = 10;
+    public float bulletSpeed = 8;
     public int fireTimer = 2;
 
     void Update()
